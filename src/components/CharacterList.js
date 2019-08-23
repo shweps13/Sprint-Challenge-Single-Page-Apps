@@ -25,9 +25,6 @@ export default function CharacterList() {
 
   }, []);
 
-
-
-
   return (
     <section className="character-list grid-view">
       {characterList.map(character => {
