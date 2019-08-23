@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import axios from 'axios';
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
+ function CharacterCard() {
+  
+
+  
+  return (   
+  <div className="save-wrapper"><h1>Ololo</h1></div>
+  );
 }
+
+export default CharacterCard;
