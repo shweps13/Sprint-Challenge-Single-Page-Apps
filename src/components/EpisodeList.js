@@ -34,7 +34,6 @@ export default function EpisodeList() {
               name = {episode.name}
               airDate = {episode.air_date}
               episodeCode = {episode.episode}
-              characters = {episode.characters}
               />
         )
       })}

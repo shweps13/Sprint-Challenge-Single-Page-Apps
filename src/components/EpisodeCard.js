@@ -1,12 +1,16 @@
 import React from 'react'
 
+import { Card, Icon } from 'semantic-ui-react'
+
 export default function LocationCard (props) {
-  const { name, airDate, episodeCode, characters } = props;
+  const { name, airDate, episodeCode } = props;
   return (
-    <div>
-        <h2>{name}</h2>
-        <p>{episodeCode}</p>
-        <p>{`Air date: ${airDate}`}</p>
-    </div>
+    <Card>
+        <Card.Content header={name} />
+        <Card.Content description={episodeCode} />
+        <Card.Content extra>
+            <Icon name='calendar alternate outline' />{airDate}
+        </Card.Content>
+    </Card>
   )
 }
