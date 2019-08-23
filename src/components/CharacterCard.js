@@ -1,13 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import axios from 'axios';
 
- function CharacterCard() {
-  
+ function CharacterCard(props) {
+  const {image,name,species,status,location, origin} = props;
 
   
   return (   
-  <div className="save-wrapper"><h1>Ololo</h1></div>
+    <div>
+    <img src={image} alt={name}/>
+    <div>
+      <h2>{name}</h2>
+      <div>
+        <p>{species} {status}</p>
+      </div>
+      <p>Location: {location.name}</p>
+      <p>Origin: {origin.name}</p>
+      <p>Episodes</p>
+    </div>
+  </div>
   );
 }
 

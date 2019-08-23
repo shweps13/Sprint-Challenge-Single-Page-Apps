@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import axios from 'axios';
+import Card from "./CharacterCard";
 
 export default function CharacterList() {
   const[characterList, setCharacterList] = useState([]);
@@ -29,7 +30,20 @@ export default function CharacterList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      {characterList.map(character => {
+        return (
+              <Card 
+              character = {character}
+              key = {character.id}
+              image = {character.image}
+              name = {character.name}
+              species = {character.species}
+              status = {character.status}
+              location = {character.location}
+              origin = {character.origin}
+              />
+        )
+      })}
     </section>
   );
 }
