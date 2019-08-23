@@ -4,6 +4,7 @@ import Header from "./components/Header.js";
 
 import CharacterList from "./components/CharacterList"
 import LocationsList from "./components/LocationsList"
+import Episodelist from "./components/EpisodeList"
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       <Header />
       {/* <TabNav /> */}
       {/* <CharacterList /> */}
-      <LocationsList />
+      {/* <LocationsList /> */}
+      <Episodelist />
     </main>
     
   );
