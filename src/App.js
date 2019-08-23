@@ -9,10 +9,11 @@ import Episodelist from "./components/EpisodeList"
 export default function App() {
   return (
     <main>
+      
       <Header />
       {/* <TabNav /> */}
-      {/* <CharacterList /> */}
-      {/* <LocationsList /> */}
+      <CharacterList />
+      <LocationsList />
       <Episodelist />
     </main>
     
